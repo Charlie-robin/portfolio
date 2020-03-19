@@ -6,10 +6,19 @@ import LogoContainer from "../../components/LogoContainer";
 const LandingPage = () => {
   return (
     <>
-      <h1>Charlie Richardson </h1>
-      <LogoContainer />
-      <SingleWordHeading headingText={"Web dev"} />
-      <SingleWordHeading headingText={"Ui Ux"} />
+      <section className={styles.landingPage}>
+        <h1>Charlie Richardson</h1>
+        <LogoContainer />
+        <div>
+          <div className={styles.subheading}>
+            <SingleWordHeading headingText={"Web dev"} />
+          </div>
+          <div className={styles.subheading}>
+            <SingleWordHeading headingText={"Ui Ux"} />
+          </div>
+        </div>
+        <div className={styles.flowTriangle}></div>
+      </section>
     </>
   );
 };

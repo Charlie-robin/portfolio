@@ -1,7 +1,21 @@
 @import "../../variables.scss";
+.landingPage {
+  @include flexbox-column-between;
+  padding: $base-spacing $base-spacing * 2;
+  height: 85vh;
 
-h1 {
+  h1 {
     @include heading;
     color: $primary-color;
     font-size: 40px;
+  }
+
+  .subheading {
+    width: 50%;
+    display: inline-block;
+  }
+
+  .flowTriangle {
+    @include flow-triangle;
+  }
 }
