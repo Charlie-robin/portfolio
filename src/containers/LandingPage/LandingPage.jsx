@@ -1,13 +1,15 @@
 import React from "react";
 import styles from "./LandingPage.module.scss";
-import SingleWordHeading from "../../components/SingleWordHeading"
+import SingleWordHeading from "../../components/SingleWordHeading";
+import LogoContainer from "../../components/LogoContainer";
 
 const LandingPage = () => {
   return (
     <>
       <h1>Charlie Richardson </h1>
-    <SingleWordHeading headingText={"Web dev"}/>
-    <SingleWordHeading headingText={"Ui Ux"}/>
+      <LogoContainer />
+      <SingleWordHeading headingText={"Web dev"} />
+      <SingleWordHeading headingText={"Ui Ux"} />
     </>
   );
 };

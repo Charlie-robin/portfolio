@@ -1,0 +1,15 @@
+@import "../../variables.scss";
+
+.logoBox {
+    @include flexbox-row-center;
+    border: 2px solid red;
+    background-image: linear-gradient($primary-color, $secondary-color);
+    padding: $base-spacing * 2;
+    border-radius: $border-radius;
+
+    .laptop {
+        color: $tertiary-color;
+        text-align: center;
+        font-size: 80px;
+    }
+}
