@@ -1,0 +1,25 @@
+@import "../../variables.scss";
+
+.navbar {
+  padding: 0 $base-spacing * 4;
+  @include flexbox-row-between;
+  width: 100%;
+  height: 10vh;
+  background-color: $primary-color;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  opacity: 0.9;
+  transition: display, 1s;
+
+  .icon {
+      display: none;
+  }
+
+  p {
+      @include heading;
+      color: $tertiary-color;
+      font-size: 25px;
+  }
+}

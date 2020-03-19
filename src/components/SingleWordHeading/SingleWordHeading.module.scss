@@ -1,0 +1,14 @@
+@import "../../variables.scss";
+
+.headingContainer {
+    border: red solid 2px;
+    display: inline-block;
+    
+    h2 {
+        @include heading;
+        color: $primary-color;
+        word-spacing: 100vw;
+        font-size: 30px;
+        text-align: center;
+    }
+}
