@@ -12,7 +12,8 @@ import {
   faTimes,
   faChevronDown,
   faChevronUp,
-  faLaptopCode
+  faLaptopCode,
+  faExternalLinkAlt
 } from "@fortawesome/free-solid-svg-icons";
 
 export default library.add(
@@ -24,5 +25,6 @@ export default library.add(
   faTimes,
   faChevronDown,
   faChevronUp,
-  faLaptopCode
+  faLaptopCode,
+  faExternalLinkAlt
 );

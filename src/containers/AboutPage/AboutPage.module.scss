@@ -1,0 +1,46 @@
+@import "../../variables.scss";
+
+.aboutPage {
+  padding: $base-spacing*2 $base-spacing * 4;
+  padding-bottom: 20vh;
+  background-color: $secondary-color;
+  position: relative;
+
+  div {
+      width: 40vw;
+      padding: 0;
+      margin:0 auto;
+  }
+
+  h2 {
+      color: $tertiary-color;
+      @include heading;
+      padding: $base-spacing*2;
+  }
+
+  p {
+      color: $base-text;
+  }
+
+  .boxList {
+      width: 100%;
+      display: flex;
+
+      p{
+          width: 50%; 
+
+          &:first-child {
+              padding-right: $base-spacing ;
+          }
+
+          &:last-child {
+            padding-left: $base-spacing ;
+        }
+      }
+  }
+
+  .flowTriangle {
+    @include flow-triangle;
+    background-color:$tertiary-color;
+  }
+}

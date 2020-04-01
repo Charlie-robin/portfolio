@@ -2,7 +2,8 @@
 .landingPage {
   @include flexbox-column-between;
   padding: $base-spacing $base-spacing * 2;
-  height: 85vh;
+  padding-bottom: 20vh;
+  height: 100vh;
 
   h1 {
     @include heading;

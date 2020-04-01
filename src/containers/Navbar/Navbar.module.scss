@@ -2,23 +2,35 @@
 
 .navbar {
   @include flexbox-row-between;
-  padding: 0 $base-spacing * 4;
+  padding: 0 $base-spacing;
   width: 100%;
   height: 10vh;
   background-color: $primary-color;
-  z-index: 2;
+  z-index: 1;
   bottom: 0;
   left: 0;
   position: fixed;
   opacity: 0.9;
   transition: display, 1s;
 
+  p,
   .icon {
-      display: none;
+    @include heading;
+    color: $tertiary-color;
+    font-size: 15px;
+
+    &:hover {
+      color: $tertiary-color-shadow;
+      cursor: pointer;
+    }
   }
+}
+
+.navClosed {
+  width: unset;
+  border-radius: 0 $border-radius $border-radius 0;
 
   p {
-      @include heading;
-      color: $tertiary-color;
+    display: none;
   }
 }

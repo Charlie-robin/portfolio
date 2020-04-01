@@ -8,7 +8,9 @@ const LandingPage = () => {
     <>
       <section className={styles.landingPage}>
         <h1>Charlie Richardson</h1>
-        <LogoContainer />
+        <div className={styles.logoContainer}>
+          <LogoContainer />
+        </div>
         <div>
           <div className={styles.subheading}>
             <SingleWordHeading headingText={"Web dev"} />
