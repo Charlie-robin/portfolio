@@ -1,0 +1,11 @@
+@import "../../variables.scss";
+
+.contactPage {
+    background-color: $secondary-color;
+    padding: $base-spacing*2;
+
+    h2 {
+        @include heading;
+        color: $tertiary-color;
+    }
+}

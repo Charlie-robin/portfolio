@@ -13,7 +13,8 @@ import {
   faChevronDown,
   faChevronUp,
   faLaptopCode,
-  faExternalLinkAlt
+  faExternalLinkAlt,
+  faEnvelope
 } from "@fortawesome/free-solid-svg-icons";
 
 export default library.add(
@@ -26,5 +27,6 @@ export default library.add(
   faChevronDown,
   faChevronUp,
   faLaptopCode,
-  faExternalLinkAlt
+  faExternalLinkAlt,
+  faEnvelope
 );
