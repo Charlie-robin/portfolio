@@ -1,43 +1,55 @@
 @import "../../variables.scss";
 
 .projectCard {
-  border: 2px solid $secondary-color-shadow;
+  border: 1px solid $primary-color;
   border-radius: $border-radius;
   overflow: hidden;
   margin-top: $base-spacing * 2;
-  background-image: linear-gradient(to left,rgba(231, 26, 96, 0.589),
-  rgba(38, 238, 148, 0.589));
+  background-color: $secondary-color;
+  display: flex;
+  flex-direction: column;
 
   h3 {
     @include heading;
+    color: $base-text;
+    padding: $base-spacing;
     background-color: $tertiary-color;
-    height: 10%;
+    font-weight: 400;
   }
 
-  .cardImg {
+  img {
     width: 100%;
-    height: 200px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    
+    opacity: .9;
+    border-top: 1px solid $secondary-color;
+    border-bottom: 1px solid $secondary-color;
   }
 
   p {
     padding: $base-spacing;
+    border-bottom: 1px solid $primary-color;
+    background-color: $tertiary-color;
+    font-size: 12px;
   }
 
   .cardLinks {
     width: 100%;
-    height: 10%;
+    background-color: $tertiary-color;
 
     .link {
+      padding: $base-spacing;
       width: 50%;
-      font-size: 20px;
-      color: $base-text;
+      font-size: 40px;
+      
+      color: $secondary-color;
 
       &:first-child {
         border-right: 1px solid $primary-color;
+      }
+
+      &:hover {
+        color: $tertiary-color;
+        background-color: $secondary-color-shadow;
+        cursor: pointer;
       }
     }
   }

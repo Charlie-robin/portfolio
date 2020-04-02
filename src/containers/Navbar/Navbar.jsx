@@ -23,7 +23,7 @@ const Navbar = () => {
     <>
       <section className={`${styles.navbar} ${navStyles}`}>
         {faIcon}
-        <p>About</p>
+        <a href={"#aboutPage"}></a><p>About</p>
         <p>Projects</p>
         <p>Cv</p>
         <p>Contact</p>

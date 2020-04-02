@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./ProjectCard.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import profile from "../../assets/img/charlie-richardson-1.png";
+import imgTest from "../../assets/img/hall-of-mirrors-landing.PNG";
 import ImgContainer from "../ImgContainer";
 
 const ProjectCard = props => {
@@ -9,13 +9,8 @@ const ProjectCard = props => {
   return (
     <>
       <div className={styles.projectCard}>
-        <h3>title</h3>
-        <div
-          className={styles.cardImg}
-          style={{
-            backgroundImage: `url(${profile})`
-          }}
-        ></div>
+        <h3>Hall of Mirrors</h3>
+        <img src={imgTest} alt=""/>
         <p>description</p>
         <div className={styles.cardLinks}>
           <FontAwesomeIcon
@@ -30,3 +25,9 @@ const ProjectCard = props => {
 };
 
 export default ProjectCard;
+{/* <div
+          className={styles.cardImg}
+          style={{
+            backgroundImage: `url(${imgTest})`
+          }}
+        ></div> */}
