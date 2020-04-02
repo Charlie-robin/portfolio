@@ -3,7 +3,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faFacebook,
   faInstagramSquare,
-  faLinkedinIn,
+  faLinkedin,
   faGithub
 } from "@fortawesome/free-brands-svg-icons";
 
@@ -20,7 +20,7 @@ import {
 export default library.add(
   faFacebook,
   faInstagramSquare,
-  faLinkedinIn,
+  faLinkedin,
   faGithub,
   faBars,
   faTimes,

@@ -4,6 +4,7 @@
   padding: $base-spacing $base-spacing * 2;
   padding-bottom: 20vh;
   height: 100vh;
+  position: relative;
 
   h1 {
     @include heading;

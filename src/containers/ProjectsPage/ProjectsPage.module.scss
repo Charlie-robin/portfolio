@@ -2,13 +2,14 @@
 
 .projectPage {
     width: 100%;
-    padding: $base-spacing*2 $base-spacing*2;
+    padding: $base-spacing*2 $base-spacing*4;
     padding-bottom: 20vh;
     position: relative;
 
     h2 {
         @include heading;
         color: $primary-color;
+       
     }
     
     .cardGrid {
@@ -17,8 +18,31 @@
         flex-direction: column;
     }
 
+    button {
+        min-width: 30%;
+        display: block;
+        margin: $base-spacing*4 auto;
+        margin-bottom: 0;
+        padding: $base-spacing ;
+        border-radius: $border-radius/2;
+        font-size: 20px;
+        text-transform: uppercase;
+        background-color: $tertiary-color;
+        color: $base-text;
+        border: none;
+        border: 1px solid $primary-color;
+        
+        &:hover {
+            background-color: $primary-color-shadow;
+            
+            cursor: pointer;
+        }
+
+    }
+
     .flowTriangle {
         @include flow-triangle;
         background-color: $secondary-color;
+        z-index: 3;
       }
 }

@@ -1,0 +1,23 @@
+@import "../../variables.scss";
+
+.footer {
+    background-color: $base-text;
+    position: relative;
+    z-index: 1;
+    padding: $base-spacing;
+
+    .arrow {
+        color: $tertiary-color;
+        margin: 0 auto;
+        display: block;
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 12px;
+        text-align: center;
+        padding-top: $base-spacing;
+        color: $tertiary-color;
+        
+    }
+}

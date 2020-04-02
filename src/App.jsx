@@ -5,7 +5,8 @@ import NavBar from "./containers/Navbar";
 import LandingPage from "./containers/LandingPage";
 import AboutPage from "./containers/AboutPage";
 import ProjectPage from "./containers/ProjectsPage";
-import ContactPage from "./containers/ContactPage"
+import ContactPage from "./containers/ContactPage";
+import Footer from "./containers/Footer";
 
 import "./data/fa-library";
 
@@ -17,6 +18,7 @@ function App() {
     <AboutPage />
     <ProjectPage />
     <ContactPage />
+    <Footer />
     </>
   );
 }
