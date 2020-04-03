@@ -17,20 +17,40 @@ const AboutPage = () => {
           challenging role in the tech industry where I can build on the skills
           I have been honing.
         </p>
-        <h2>Tech</h2>
         <div className={styles.boxList}>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-            dolore voluptas exercitationem quasi? Magnam et, porro sunt
-            explicabo accusantium voluptatum odit facilis sapiente est quisquam
-            adipisci? Doloremque quam dolor tempora.
-          </p>
-          <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-            dolore voluptas exercitationem quasi? Magnam et, porro sunt
-            explicabo accusantium voluptatum odit facilis sapiente est quisquam
-            adipisci? Doloremque quam dolor tempora.
-          </p>
+          <h3>Languages</h3>
+          <ul>
+            <li>HTML 5</li>
+            <li>CSS / SCSS</li>
+          </ul>
+          <ul>
+            <li>Javascript</li>
+          </ul>
+          </div>
+          <div className={styles.boxList}><h3>Tools</h3>
+          <ul>
+          <li>Git</li>
+          <li>React</li>
+          <li>Firebase</li>
+          </ul>
+          <ul>
+          <li>Yarn</li>
+          <li>Jest / Enzyme</li>
+          <li>Bootstrap</li>
+          </ul>
+          </div>
+          <div className={styles.boxList}>
+          <h3>Key Concepts</h3>
+          <ul>
+            <li>Rest API</li>
+            <li>Soft skills</li>
+            <li>NoSQL db</li>
+          </ul>
+          <ul>
+            <li>OOP</li>
+            <li>Unit testing</li>
+            <li>Source control</li>
+          </ul>
         </div>
         <div className={styles.flowTriangle}></div>
       </section>

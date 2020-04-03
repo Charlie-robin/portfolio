@@ -5,7 +5,7 @@ import profile from "../../assets/img/charlie-richardson-1.png";
 const ImgContainer = () => {
   return (
     <>
-      <img className={styles.imgContainer} src={profile} /> 
+      <img className={styles.imgContainer} src={profile} alt="Charlie Richardson portrait"/> 
     </>
   );
 };

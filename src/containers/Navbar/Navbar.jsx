@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Navbar.module.scss";
-import cvPdf from "../../assets/charlie-richardson-cv-2019.pdf"
+import cvPdf from "../../assets/charlie-richardson-cv-2019.pdf";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 
@@ -24,9 +24,13 @@ const Navbar = () => {
     <>
       <section className={`${styles.navbar} ${navStyles}`}>
         {faIcon}
-        <a href={"#AboutPage"}><p>About</p></a>
+        <a href={"#AboutPage"}>
+          <p>About</p>
+        </a>
         <p>Projects</p>
-        <a href={cvPdf} target="_blank"><p>Cv</p></a>
+        <a href={cvPdf} target="_blank" rel="noopener noreferrer">
+          <p>Cv</p>
+        </a>
         <p>Contact</p>
       </section>
     </>

@@ -15,7 +15,7 @@
   h2 {
       color: $tertiary-color;
       @include heading;
-      padding: $base-spacing*2;
+      padding: $base-spacing;
   }
 
   p {
@@ -23,24 +23,36 @@
   }
 
   .boxList {
-      width: 100%;
-      display: flex;
+    width: 100%;
+    display: inline-block;
+    padding: $base-spacing;
+    
+    h3 {
+      @include heading;
+      padding-bottom: $base-spacing;
+      color: $tertiary-color;
+    }
+    
+    ul {
+      width: 50%;
+      display: inline-block;
+      color: $base-text;
+      list-style: none;
+      li {
+        padding: $base-spacing/2 0;
 
-      p{
-          width: 50%; 
-
-          &:first-child {
-              padding-right: $base-spacing ;
-          }
-
-          &:last-child {
-            padding-left: $base-spacing ;
-        }
       }
+      }
+    }
+    
+    .boxList:nth-child(5) {
+      border-top: 1px solid $tertiary-color;
+      border-bottom: 1px solid $tertiary-color;
+    }
+    
+    
+    .flowTriangle {
+      @include flow-triangle;
+      background-color:$tertiary-color;
+    }
   }
-
-  .flowTriangle {
-    @include flow-triangle;
-    background-color:$tertiary-color;
-  }
-}
