@@ -5,14 +5,19 @@
     position: relative;
     z-index: 1;
     padding: $base-spacing;
-
+    
+    
     .arrow {
         color: $tertiary-color;
         margin: 0 auto;
         display: block;
         font-size: 20px;
+        &:hover {
+            cursor: pointer;
+            color: $primary-color;
+        }
     }
-
+    
     p {
         font-size: 12px;
         text-align: center;
@@ -21,3 +26,22 @@
         
     }
 }
+
+@media only screen and (min-width: 764px) {
+    .footer {
+        height: 15vh;
+      width: 60%;
+      margin-left: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+        opacity: .9;
+
+
+      .arrow {
+          display: none;
+          
+      }
+    }
+
+  }

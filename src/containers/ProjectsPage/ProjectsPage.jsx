@@ -20,7 +20,7 @@ const ProjectsPage = () => {
 
   return (
     <>
-      <section className={styles.projectPage}>
+      <section id="projects" className={styles.projectPage}>
         <h2>Projects</h2>
         <div className={styles.cardGrid}></div>
         {projectJsx}

@@ -1,58 +1,132 @@
 @import "../../variables.scss";
 
 .aboutPage {
-  padding: $base-spacing*2 $base-spacing * 4;
+  padding: $base-spacing * 2 $base-spacing * 4;
   padding-bottom: 20vh;
   background-color: $secondary-color;
   position: relative;
 
-  div {
-      width: 40vw;
-      padding: 0;
-      margin:0 auto;
+  img {
+    width: $base-spacing * 12;
+    border-radius: $border-radius;
+    display: block;
+    margin: 0 auto;
   }
-
-  h2 {
+  .content {
+    h2 {
       color: $tertiary-color;
       @include heading;
       padding: $base-spacing;
-  }
-
-  p {
-      color: $base-text;
-  }
-
-  .boxList {
-    width: 100%;
-    display: inline-block;
-    padding: $base-spacing;
-    
-    h3 {
-      @include heading;
-      padding-bottom: $base-spacing;
-      color: $tertiary-color;
     }
-    
-    ul {
-      width: 50%;
+
+    p {
+      color: $base-text;
+    }
+  }
+  .skills {
+    .boxList {
+      width: 100%;
       display: inline-block;
-      color: $base-text;
-      list-style: none;
-      li {
-        padding: $base-spacing/2 0;
+      padding: $base-spacing;
 
+      h3 {
+        @include heading;
+        padding-bottom: $base-spacing;
+        color: $tertiary-color;
       }
+
+      ul {
+        columns: 2;
+        list-style-type: disc;
+        width: 100%;
+        display: inline-block;
+        color: $base-text;
+        list-style: none;
+        font-size: 14px;
       }
     }
-    
-    .boxList:nth-child(5) {
-      border-top: 1px solid $tertiary-color;
-      border-bottom: 1px solid $tertiary-color;
-    }
-    
-    
-    .flowTriangle {
-      @include flow-triangle;
-      background-color:$tertiary-color;
+    .languages {
+      ul {
+        columns: 3;
+      }
     }
   }
+
+  .tools {
+    border-top: 1px solid $tertiary-color;
+    border-bottom: 1px solid $tertiary-color;
+  }
+
+
+  .flowTriangle {
+    @include flow-triangle;
+    background-color: $tertiary-color;
+  }
+}
+
+@media only screen and (min-width: 764px) {
+  .aboutPage {
+    margin-left: 40%;
+    width: 60%;
+    height: 100vh;
+    padding: $base-spacing * 2;
+    display: flex;
+    flex-direction: column;
+    
+
+    img {
+      display: none;
+    }
+
+    .content {
+      display: inline-block;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      h2 {
+        padding-top: 0;
+      }
+    }
+
+    .skills {
+      display: flex;
+      flex-direction: column;
+
+      .boxList {
+        ul {
+          columns: 3;
+          text-align: center;
+          li {
+            padding: 2px 0 ;
+          }
+        }
+      }
+    
+      .languages {
+        grid-area: languages;
+        
+      }
+      .tools {
+        grid-area: tools;
+        width: 100%;
+        ul {
+          columns: 3;
+        }
+      }
+      .concepts {
+        grid-area: concepts;
+        width: 100%;
+        ul {
+          columns: 3;
+        }
+      }
+    }
+
+    .flowTriangle {
+      border-left: 1px solid $secondary-color;
+    }
+   
+  }
+}

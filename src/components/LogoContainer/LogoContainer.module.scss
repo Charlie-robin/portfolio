@@ -1,11 +1,6 @@
 @import "../../variables.scss";
 
 .laptop {
-  @include flexbox-row-center;
-  background-image: linear-gradient($primary-color, $secondary-color);
-  padding: $base-spacing * 2;
-  border-radius: $border-radius;
   color: $tertiary-color;
-  text-align: center;
-  font-size: 40vw;
+  font-size: $base-spacing*10;
 }

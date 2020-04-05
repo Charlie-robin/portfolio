@@ -2,35 +2,66 @@
 
 .navbar {
   @include flexbox-row-between;
-  padding: 0 $base-spacing;
+  padding: 0 $base-spacing * 4;
   width: 100%;
   height: 10vh;
-  background-color: $primary-color;
+  background-color: $base-text;
   z-index: 1;
   bottom: 0;
   left: 0;
   position: fixed;
   opacity: 0.9;
-  transition: display, 1s;
 
-  p,
+  a,
   .icon {
     @include heading;
     color: $tertiary-color;
     font-size: 15px;
+    text-decoration: none;
 
     &:hover {
       color: $tertiary-color-shadow;
       cursor: pointer;
     }
   }
+  .icon {
+    position: absolute;
+    left: $base-spacing;
+  }
 }
 
 .navClosed {
   width: unset;
   border-radius: 0 $border-radius $border-radius 0;
+  padding-right: 0;
 
-  p {
+  a {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 764px) {
+  .navbar {
+    left: 0;
+    height: 15vh;
+    width: 40%;
+    padding: 0 $base-spacing*2;
+    border-radius: 0;
+    z-index: 2;
+
+    .icon {
+      display: none;
+    }
+  }
+
+  .navClosed {
+    width: 40%;
+    padding: 0 $base-spacing*2;
+    border-radius: 0;
+   
+  
+    a {
+      display: block;
+    }
   }
 }

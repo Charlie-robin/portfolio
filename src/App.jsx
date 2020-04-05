@@ -1,6 +1,6 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.scss';
+import React from "react";
+import logo from "./logo.svg";
+import styles from "./App.module.scss";
 import NavBar from "./containers/Navbar";
 import LandingPage from "./containers/LandingPage";
 import AboutPage from "./containers/AboutPage";
@@ -13,12 +13,14 @@ import "./data/fa-library";
 function App() {
   return (
     <>
-    <NavBar />
-    <LandingPage />
-    <AboutPage />
-    <ProjectPage />
-    <ContactPage />
-    <Footer />
+      <NavBar />
+      <section className={styles.landingAboutContainer}>
+        <LandingPage />
+        <AboutPage />
+      </section>
+      <ProjectPage />
+      <ContactPage />
+      <Footer />
     </>
   );
 }

@@ -6,7 +6,7 @@ import LogoContainer from "../../components/LogoContainer";
 const LandingPage = () => {
   return (
     <>
-      <section className={styles.landingPage}>
+      <section id="landing" className={styles.landingPage}>
         <h1>Charlie Richardson</h1>
         <div className={styles.logoContainer}>
           <LogoContainer />

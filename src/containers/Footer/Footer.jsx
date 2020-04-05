@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <>
       <footer className={styles.footer}>
-        <FontAwesomeIcon icon={["fas", "chevron-up"]} className={styles.arrow} />
+        <a href="#landing"><FontAwesomeIcon icon={["fas", "chevron-up"]} className={styles.arrow} /></a>
         <p>Charlie Richardson &copy;</p>
       </footer>
     </>

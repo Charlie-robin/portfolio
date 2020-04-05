@@ -24,14 +24,9 @@ const Navbar = () => {
     <>
       <section className={`${styles.navbar} ${navStyles}`}>
         {faIcon}
-        <a href={"#AboutPage"}>
-          <p>About</p>
-        </a>
-        <p>Projects</p>
-        <a href={cvPdf} target="_blank" rel="noopener noreferrer">
-          <p>Cv</p>
-        </a>
-        <p>Contact</p>
+        <a href="#about" onClick={() => toggleNav(!navShowing)}>About</a>
+        <a href="#projects" onClick={() => toggleNav(!navShowing)}>Projects</a>
+        <a href="#contact" onClick={() => toggleNav(!navShowing)}>Contact</a>
       </section>
     </>
   );

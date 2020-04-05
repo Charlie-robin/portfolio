@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const ContactPage = () => {
   return (
     <>
-      <section className={styles.contactPage}>
+      <section id="contact" className={styles.contactPage}>
         <h2>Contact</h2>
         <div>
           <a
@@ -41,7 +41,7 @@ const ContactPage = () => {
         </div>
         <div className={styles.socialContainer}>
           <a
-            href="www.linkedin.com/in/charlie-richardson-625ab3190"
+            href="https://www.linkedin.com/in/charlie-richardson-625ab3190"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -46,3 +46,13 @@
         z-index: 3;
       }
 }
+
+
+
+@media only screen and (min-width: 764px) {
+    .projectPage {
+        width: 60%;
+        margin-left: 40% ;
+        border-left: 1px solid $secondary-color;
+    }
+}

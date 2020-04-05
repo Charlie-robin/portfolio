@@ -1,10 +1,11 @@
 @import "../../variables.scss";
 .landingPage {
   @include flexbox-column-between;
-  padding: $base-spacing $base-spacing * 2;
+  padding: $base-spacing*2 $base-spacing * 2;
   padding-bottom: 20vh;
   height: 100vh;
   position: relative;
+  background-color: $tertiary-color;
 
   h1 {
     @include heading;
@@ -12,6 +13,13 @@
     font-size: 40px;
   }
 
+  .logoContainer {
+    @include flexbox-row-center;
+  background-image: linear-gradient($primary-color, $secondary-color);
+  padding: $base-spacing * 2;
+  border-radius: $border-radius;
+ 
+  }
   .subheading {
     width: 50%;
     display: inline-block;
@@ -20,4 +28,17 @@
   .flowTriangle {
     @include flow-triangle;
   }
+}
+
+@media only screen and (min-width: 764px) {
+  .landingPage {
+    width: 40%;
+    position: fixed;
+    z-index: 1;
+
+    .flowTriangle {
+      opacity: .2;
+    }
+  }
+
 }
