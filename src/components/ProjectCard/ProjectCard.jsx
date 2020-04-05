@@ -14,7 +14,7 @@ const ProjectCard = ({projectCardData}) => {
           <a href={projectCardData.webLink} target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon
               icon={["fas", "external-link-alt"]}
-              className={styles.link}
+              className={`${styles.link} ${styles.linkBorder}`}
             />
           </a>
           <a href={projectCardData.gitHubLink} target="_blank" rel="noopener noreferrer">

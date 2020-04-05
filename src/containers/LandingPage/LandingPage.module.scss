@@ -36,9 +36,23 @@
     position: fixed;
     z-index: 1;
 
+    h1 {
+      font-size: 30px;
+    }
+
+    h2 {
+      font-size: 25px;
+    }
+
     .flowTriangle {
-      opacity: .2;
+      display: none;
     }
   }
 
+}
+
+@media only screen and (min-width: 1024px) {
+  .landingPage{
+    width: 25%;
+  }
 }

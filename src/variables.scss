@@ -70,11 +70,7 @@ $base-spacing: 10px;
 }
 
 @mixin flow-triangle-media-desktop {
-    position: absolute;
-    height: 10vh;
-    width: 100%;
-    background-color: $secondary-color;
-    opacity: .2;
-    -webkit-clip-path: polygon(50% 50%, 70% 0, 100% 0, 100% 100%, 0 100%, 0 0, 30% 0);
-    clip-path: polygon(50% 50%, 70% 0, 100% 0, 100% 100%, 0 100%, 0 0, 30% 0);
+    background-color: $tertiary-color;
+    -webkit-clip-path: polygon(50% 100%, 90% 0, 100% 0, 100% 100%, 0 100%, 0 0, 10% 0);
+    clip-path: polygon(50% 100%, 90% 0, 100% 0, 100% 100%, 0 100%, 0 0, 10% 0);
 }

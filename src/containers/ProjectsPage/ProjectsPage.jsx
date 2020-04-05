@@ -13,7 +13,7 @@ const ProjectsPage = () => {
 
   const subProjects = projects
     .filter(projectObj => projectObj.mainProject === false)
-    .map(projectObj => <ProjectCard projectCardData={projectObj} />);
+    .map(projectObj => <ProjectCard projectCardData={projectObj}/>);
 
   const projectJsx = allProjects ? [mainProject, subProjects] : mainProject;
   const btnText = allProjects ? "less" : "more";
@@ -22,11 +22,15 @@ const ProjectsPage = () => {
     <>
       <section id="projects" className={styles.projectPage}>
         <h2>Projects</h2>
-        <div className={styles.cardGrid}></div>
-        {projectJsx}
+        <div className={styles.cardFlex}>
+  {projectJsx}
         <button onClick={() => toggleAllprojects(!allProjects)}>
+        
           {btnText}
         </button>
+        </div>
+          <div className={styles.cardGrid}>
+{mainProject}{subProjects}</div>
         <div className={styles.flowTriangle}></div>
       </section>
     </>

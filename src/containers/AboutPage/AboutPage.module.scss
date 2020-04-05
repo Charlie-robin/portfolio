@@ -6,21 +6,24 @@
   background-color: $secondary-color;
   position: relative;
 
-  img {
-    width: $base-spacing * 12;
-    border-radius: $border-radius;
-    display: block;
-    margin: 0 auto;
-  }
   .content {
-    h2 {
-      color: $tertiary-color;
-      @include heading;
-      padding: $base-spacing;
+    img {
+      width: $base-spacing * 12;
+      border-radius: $border-radius;
+      display: block;
+      margin: 0 auto;
     }
 
-    p {
-      color: $base-text;
+    .contentText {
+      h2 {
+        color: $tertiary-color;
+        @include heading;
+        padding: $base-spacing;
+      }
+
+      p {
+        color: $base-text;
+      }
     }
   }
   .skills {
@@ -57,7 +60,6 @@
     border-bottom: 1px solid $tertiary-color;
   }
 
-
   .flowTriangle {
     @include flow-triangle;
     background-color: $tertiary-color;
@@ -72,11 +74,6 @@
     padding: $base-spacing * 2;
     display: flex;
     flex-direction: column;
-    
-
-    img {
-      display: none;
-    }
 
     .content {
       display: inline-block;
@@ -85,8 +82,14 @@
       flex-direction: column;
       justify-content: space-evenly;
 
-      h2 {
-        padding-top: 0;
+      img {
+        display: none;
+      }
+
+      .contentText {
+        h2 {
+          padding-top: 0;
+        }
       }
     }
 
@@ -99,27 +102,8 @@
           columns: 3;
           text-align: center;
           li {
-            padding: 2px 0 ;
+            padding: 2px 0;
           }
-        }
-      }
-    
-      .languages {
-        grid-area: languages;
-        
-      }
-      .tools {
-        grid-area: tools;
-        width: 100%;
-        ul {
-          columns: 3;
-        }
-      }
-      .concepts {
-        grid-area: concepts;
-        width: 100%;
-        ul {
-          columns: 3;
         }
       }
     }
@@ -127,6 +111,69 @@
     .flowTriangle {
       border-left: 1px solid $secondary-color;
     }
-   
   }
 }
+
+@media only screen and (min-width: 1024px) {
+  .aboutPage {
+    width: 75%;
+    margin-left: 25%;
+    padding: $base-spacing * 2 $base-spacing * 5;
+    display: unset;
+
+    .content {
+      flex-direction: row-reverse;
+      width: 100%;
+
+      img {
+        display: unset;
+        width: $base-spacing * 16;
+      }
+      .contentText {
+        width: 80%;
+        padding-right: $base-spacing * 2;
+        h2 {
+          display: inline-block;
+          width: 80%;
+        }
+      }
+    }
+
+    .skills {
+      display: grid;
+      grid-template: "languages languages"
+      "tools concepts";
+      .boxList {
+        ul {
+          columns: 2;
+          // text-align: left;
+          li {
+            padding: 2px 0;
+          }
+        }
+      }
+
+      .languages {
+        grid-area: languages;
+        border-bottom: 1px solid $tertiary-color;
+        ul {
+          columns: 3;
+        }
+      }
+      .tools {
+        grid-area: tools;
+        border: none;
+        border-right: 1px solid $tertiary-color;
+      }
+      .concepts {
+        grid-area: concepts;
+      }
+    }
+
+    .flowTriangle {
+      border-left: 1px solid $secondary-color;
+      @include flow-triangle-media-desktop;
+    }
+  }
+}
+

@@ -32,16 +32,14 @@
   .cardLinks {
     width: 100%;
     background-color: $tertiary-color;
-
+    .linkBorder {
+      border-right: 1px solid $primary-color;
+    }
     .link {
       padding: $base-spacing;
       width: 50%;
       font-size: 40px;
       color: $base-text;
-
-      &:first-child {
-        border-right: 1px solid $primary-color;
-      }
 
       &:hover {
         color: $tertiary-color;
@@ -49,5 +47,6 @@
         cursor: pointer;
       }
     }
+    
   }
 }

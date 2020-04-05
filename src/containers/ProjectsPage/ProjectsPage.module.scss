@@ -1,58 +1,81 @@
-@import "../../variables.scss"; 
+@import "../../variables.scss";
 
 .projectPage {
-    width: 100%;
-    padding: $base-spacing*2 $base-spacing*4;
-    padding-bottom: 20vh;
-    position: relative;
+  width: 100%;
+  padding: $base-spacing * 2 $base-spacing * 4;
+  padding-bottom: 20vh;
+  position: relative;
 
-    h2 {
-        @include heading;
-        color: $primary-color;
-       
+  h2 {
+    @include heading;
+    color: $primary-color;
+  }
+
+  .cardFlex {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cardGrid {
+    display: none;
+  }
+
+  button {
+    min-width: 30%;
+    display: block;
+    margin: $base-spacing * 4 auto;
+    margin-bottom: 0;
+    padding: $base-spacing;
+    border-radius: $border-radius/2;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: $tertiary-color;
+    color: $base-text;
+    border: none;
+    border: 1px solid $primary-color;
+
+    &:hover {
+      background-color: $primary-color-shadow;
+
+      cursor: pointer;
     }
-    
+  }
+
+  .flowTriangle {
+    @include flow-triangle;
+    background-color: $secondary-color;
+    z-index: 3;
+  }
+}
+
+@media only screen and (min-width: 764px) {
+  .projectPage {
+    width: 60%;
+    margin-left: 40%;
+    border-left: 1px solid $secondary-color;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .projectPage {
+    width: 75%;
+    margin-left: 25%;
+
+    .cardFlex {
+      display: none;
+    }
+
     .cardGrid {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    button {
-        min-width: 30%;
-        display: block;
-        margin: $base-spacing*4 auto;
-        margin-bottom: 0;
-        padding: $base-spacing ;
-        border-radius: $border-radius/2;
-        font-size: 20px;
-        text-transform: uppercase;
-        background-color: $tertiary-color;
-        color: $base-text;
-        border: none;
-        border: 1px solid $primary-color;
-        
-        &:hover {
-            background-color: $primary-color-shadow;
-            
-            cursor: pointer;
-        }
-
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: $base-spacing * 2;
     }
 
     .flowTriangle {
-        @include flow-triangle;
-        background-color: $secondary-color;
-        z-index: 3;
-      }
-}
-
-
-
-@media only screen and (min-width: 764px) {
-    .projectPage {
-        width: 60%;
-        margin-left: 40% ;
-        border-left: 1px solid $secondary-color;
+      border-left: 1px solid $secondary-color;
+      @include flow-triangle-media-desktop;
+      background-color: $secondary-color;
     }
+  }
 }

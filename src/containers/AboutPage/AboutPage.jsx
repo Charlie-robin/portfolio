@@ -7,15 +7,17 @@ const AboutPage = () => {
   return (
     <>
       <section id="about" className={styles.aboutPage}>
-        <img src={profilePic} alt="" />
         <div className={styles.content}>
-          <h2>About</h2>
-          <p>
-            My desire to learn new technologies has led me to the 12-week
-            intensive self-funded _nology course. I am now looking for a
-            challenging role in the tech industry where I can build on the
-            skills I have been honing.
-          </p>
+          <img src={profilePic} alt="" />
+          <div className={styles.contentText}>
+            <h2>About</h2>
+            <p>
+              My desire to learn new technologies has led me to the 12-week
+              intensive self-funded _nology course. I am now looking for a
+              challenging role in the tech industry where I can build on the
+              skills I have been honing.
+            </p>
+          </div>
         </div>
         <div className={styles.skills}>
           <div className={`${styles.boxList} ${styles.languages}`}>
