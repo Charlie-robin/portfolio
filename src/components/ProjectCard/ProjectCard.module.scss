@@ -23,7 +23,7 @@
   }
 
   p {
-    min-height: 80px;
+    min-height: 100px;
     padding: $base-spacing;
     border-bottom: 1px solid $secondary-color;
     background-color: $tertiary-color;
@@ -33,9 +33,11 @@
   .cardLinks {
     width: 100%;
     background-color: $tertiary-color;
+
     .linkBorder {
       border-right: 1px solid $primary-color;
     }
+
     .link {
       padding: $base-spacing;
       width: 50%;
@@ -48,6 +50,29 @@
         cursor: pointer;
       }
     }
-    
+    .fullLink {
+      width: 100%;
+      border: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .projectCard {
+    margin: 0;
+
+    h3 {
+      font-size: 25px;
+    }
+
+    p {
+      font-size: 18px;
+      min-height: 150px;
+    }
+    .cardLinks {
+      .link {
+        font-size: 45px;
+      }
+    }
   }
 }

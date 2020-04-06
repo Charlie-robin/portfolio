@@ -36,7 +36,7 @@ const projects = [
     secondayImg: vojoLand,
     imgAlt: "Vojo",
     webLink: "https://vojo-bbe4f.firebaseapp.com/landing-page",
-    gitHubLink: "https://github.com/nology-tech/vojo",
+    gitHubLink: "",
     mainProject: true,
   },
 

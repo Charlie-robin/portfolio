@@ -62,11 +62,16 @@
     width: 75%;
     margin-left: 25%;
 
+    h2 {
+      font-size: 30px;
+    }
+
     .cardFlex {
       display: none;
     }
 
     .cardGrid {
+      margin-top: $base-spacing*2;
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: $base-spacing * 2;

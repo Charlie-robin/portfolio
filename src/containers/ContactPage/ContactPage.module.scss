@@ -13,7 +13,7 @@
   }
 
   .socialContainer {
-      border-top: 1px solid $base-text;
+    border-top: 1px solid $base-text;
   }
 
   div {
@@ -26,7 +26,7 @@
       flex-grow: 1;
       font-size: 30px;
       color: $tertiary-color;
-      
+
       &:hover {
         color: $base-text;
       }
@@ -40,14 +40,13 @@
       border-radius: 2px;
       font-weight: bold;
       background-color: $tertiary-color;
-      
+
       &:hover {
         background-color: $base-text;
       }
     }
   }
 }
-
 
 @media only screen and (min-width: 764px) {
   .contactPage {
@@ -57,8 +56,27 @@
 }
 
 @media only screen and (min-width: 1024px) {
-  .contactPage{
+  .contactPage {
     width: 75%;
     margin-left: 25%;
+    padding: $base-spacing * 2 10%;
+
+    h2 {
+      font-size: 30px;
+      margin-bottom: $base-spacing;
+    }
+    div {
+      .socials {
+        font-size: 40px;
+      }
+
+      .contactCv {
+        width: 40px;
+        height: 40px;
+        font-size: 25px;
+        text-align: center;
+        padding: $base-spacing/2 0;
+      }
+    }
   }
 }
