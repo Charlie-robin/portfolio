@@ -84,7 +84,7 @@ const projects = [
   {
     title: "Hostile Aliens",
     description:
-      "OOP timed tech test. It was specified that this was to be within a single HTML file under 150 lines of code. The aliens consisted of three different classes of ship with similar characteristics but with different values. ",
+      "OOP timed tech test. It was specified that this was to be within a single HTML file under 150 lines of code. The aliens consisted of three different classes of ship with similar characteristics but with different values. CSS has been used sparingly to keep it under 150 lines. ",
     tools: ["HTML", "CSS", "Javascript"],
     summary: "summary",
     primaryImg: hostileAliensLand,
