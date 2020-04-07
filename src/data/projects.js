@@ -12,20 +12,7 @@ import hostileAliensLand from "../assets/img/hostile-aliens-landing.PNG";
 import hostileAliensGame from "../assets/img/hostile-aliens-landing.PNG";
 
 const projects = [
-  {
-    title: "Todo Li",
-    description:
-      "Originally a todo list application centered around the integration of a database with the utilization of CRUD. Extended with the addition of authentication, private routing and a personal calendar feature.",
-    tools: ["react", "firebase"],
-    summary: "summary",
-    primaryImg: todoLiCalendar,
-    secondayImg: todoLiList,
-    imgAlt: "A Todo List and Calendar application",
-    webLink: " https://todo-li.charlie-richardson.co.uk/landing-page",
-    gitHubLink: "https://github.com/Charlie-robin/todo-li",
-    mainProject: true,
-  },
-
+  
   {
     title: "Vojo",
     description:
@@ -37,6 +24,20 @@ const projects = [
     imgAlt: "Vojo",
     webLink: "https://vojo-bbe4f.firebaseapp.com/landing-page",
     gitHubLink: "",
+    mainProject: true,
+  },
+
+  {
+    title: "Todo Li",
+    description:
+      "Originally a todo list application centered around the integration of a database with the utilization of CRUD. Extended with the addition of authentication, private routing and a personal calendar feature.",
+    tools: ["react", "firebase"],
+    summary: "summary",
+    primaryImg: todoLiCalendar,
+    secondayImg: todoLiList,
+    imgAlt: "A Todo List and Calendar application",
+    webLink: " https://todo-li.charlie-richardson.co.uk/landing-page",
+    gitHubLink: "https://github.com/Charlie-robin/todo-li",
     mainProject: true,
   },
 

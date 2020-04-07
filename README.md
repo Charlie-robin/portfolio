@@ -1,15 +1,16 @@
 # Charlie Richardson Portfolio
 
+Here is my Portfolio.
+
 ## Description
 
-My portfolio to showcase my most recent projects.
+My desire to learn new technologies has led me to the 12-week intensive self-funded _nology course. Here is the result of that course, a showcase of my projects and design abilities.
 
 ## Built With
 
 - React
 - Firebase
 - Fontawesome - Icons
-- @reachrouter
 - node-sass
 - mkrc
 
@@ -23,7 +24,7 @@ My portfolio to showcase my most recent projects.
 
 To see what is in the work que, follow the link.
 
-[CHarlie Richardson Portfolio - Trello](https://trello.com/b/R4Iz2UtF/portfolio)
+[Charlie Richardson Portfolio - Trello](https://trello.com/b/R4Iz2UtF/portfolio)
 
 ## Contact
 
