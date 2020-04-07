@@ -4,7 +4,6 @@
   background-color: $secondary-color;
   padding: $base-spacing * 2;
   padding: $base-spacing * 2 $base-spacing * 4;
-  z-index: 3;
   position: relative;
 
   h2 {
@@ -13,7 +12,7 @@
   }
 
   .socialContainer {
-    border-top: 1px solid $base-text;
+    border-top: 1px solid $tertiary-color;
   }
 
   div {

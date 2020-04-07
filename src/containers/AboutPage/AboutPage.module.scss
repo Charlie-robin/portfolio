@@ -23,6 +23,7 @@
 
       p {
         color: $base-text;
+        text-align: justify;
       }
     }
   }
@@ -31,6 +32,7 @@
       width: 100%;
       display: inline-block;
       padding: $base-spacing;
+      text-align: center;
 
       h3 {
         @include heading;
@@ -100,7 +102,7 @@
       .boxList {
         ul {
           columns: 3;
-          text-align: center;
+          
           li {
             padding: 2px 0;
           }

@@ -45,7 +45,6 @@
   .flowTriangle {
     @include flow-triangle;
     background-color: $secondary-color;
-    z-index: 3;
   }
 }
 
@@ -71,7 +70,7 @@
     }
 
     .cardGrid {
-      margin-top: $base-spacing*2;
+      margin-top: $base-spacing * 2;
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: $base-spacing * 2;
