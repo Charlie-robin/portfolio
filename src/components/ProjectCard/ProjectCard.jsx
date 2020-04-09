@@ -22,7 +22,7 @@ const ProjectCard = ({projectCardData}) => {
   ;
   return (
     <>
-      <div className={styles.projectCard}>
+      <div id={projectCardData.title} className={styles.projectCard}>
         <h3>{projectCardData.title}</h3>
         <img src={projectCardData.primaryImg} alt={projectCardData.imgAlt} />
         <p>{projectCardData.description}</p>

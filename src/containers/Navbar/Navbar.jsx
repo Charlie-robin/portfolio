@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./Navbar.module.scss";
-import cvPdf from "../../assets/charlie-richardson-cv-2019.pdf";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 
