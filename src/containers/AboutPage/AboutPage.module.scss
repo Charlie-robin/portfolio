@@ -9,6 +9,7 @@
   .content {
     img {
       width: $base-spacing * 12;
+      height: auto;
       border-radius: $border-radius;
       display: block;
       margin: 0 auto;
@@ -193,3 +194,8 @@
   }
 }
 
+@media only screen and (min-width: 1440px) {
+  .aboutPage {
+    justify-content: center;
+  }
+}
