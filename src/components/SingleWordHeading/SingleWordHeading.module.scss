@@ -1,8 +1,0 @@
-@import "../../variables.scss";
-
-.headingContainer {
-  @include heading;
-  color: $primary-color;
-  word-spacing: 100vw;
-  font-size: 30px;
-}
